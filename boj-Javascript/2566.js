@@ -1,6 +1,6 @@
 const input =
     require('fs').readFileSync(
-        "1000.txt"
+        "/dev/stdin"
     )
         .toString()
         .trim()
@@ -15,9 +15,13 @@ for(let i = 0; i < input.length; i++){
 }
 
 let maxResult = Math.max(...arr)
+console.log(maxResult)
 
-for(let i = 0; i < arr.length; i++){
-    if(maxResult){
 
+for(let i = 0; i < input.length; i++){
+    for(let j = 0; j < input[i].length; j++){
+        if(input[i][j] === maxResult){
+            console.log(i+1 ,j+1)
+        }
     }
 }
