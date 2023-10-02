@@ -4,11 +4,8 @@ let a = input.split('').sort()
 let set = new Set(a)
 let setArr = [...set]
 
-for (let i = 0; i < setArr.length; i++) {
-    for(let j = 0; j < a.length; j++){
-        
-    }
-}
+const aCode = a.map((v,i)=> {
+    
+})
 
-console.log(a)
-
+console.log(aCode)
